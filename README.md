@@ -1,4 +1,7 @@
-# Track User Activity Log.
+# Track User Activity Log
+
+Track User Activity on your webpage whenever the user will click, double click, print, copy-paste, form submit and form reset.
+This script will take screentshot of the webpage and add event log for the same which will store the event details, screenshot file name, time and the user's IP Address.
 
 # Developed By : 
 Bharat Parmar
@@ -36,15 +39,6 @@ Bharat Parmar
 3) trackuser.php : Jquery send the Canvas Image Data URL to php file which will created new png image file. It will also store the event details, Time, Screenshot Image file name and IP Address.
 
 # How to use : 
-
-1) Add canvas to your webpage in footer area with this code : 
-
-<canvas id="image-canvas" style="display:none;"></canvas>
-
-2) include following jquery files :
-
-<script type="text/javascript" src="js/html2canvas/html2canvas.js"></script>
-<script type="text/javascript" src="js/html2canvas/jquery.plugin.html2canvas.js"></script>
-<script type="text/javascript" src="js/trackuser.jquery.js"></script>
+Please check example.php.
 
 
