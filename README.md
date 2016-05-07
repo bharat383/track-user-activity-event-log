@@ -35,8 +35,12 @@ Bharat Parmar
 # How It Works :
 
 1) HTML to Canvas : Script will read the HTML code of the Web Page. 
+
 2) HTML2Canvas Plugin : This plugin will generate Canvas content into the base64 data url of the image.
+
 3) trackuser.php : Jquery send the Canvas Image Data URL to php file which will created new png image file. It will also store the event details, Time, Screenshot Image file name and IP Address.
+
+4) "screenshot" directory should have writeable permission.
 
 # How to use : 
 Please check example.php.
