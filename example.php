@@ -54,7 +54,7 @@
 	</form>
 
 	<!-- BEGIN CODE FOR USER ACTIVITY LOG -->
-		<canvas id="image-canvas" style="display:none;"></canvas>
+		<div style="display:none;"></div><canvas id="image-canvas" style="display:none;"></canvas></div>
 		<script type="text/javascript" src="js/html2canvas/html2canvas.js"></script>
 		<script type="text/javascript" src="js/html2canvas/jquery.plugin.html2canvas.js"></script>
 		<script type="text/javascript" src="js/trackuser.jquery.js"></script>
