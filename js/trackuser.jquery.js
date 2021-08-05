@@ -28,4 +28,6 @@ $(document).ready(function(){
 	window.addEventListener("copy", function(){TrackUserActivity.CaptureScreen('copy')});
 	window.addEventListener("beforeprint", function(){TrackUserActivity.CaptureScreen('print')});
 	window.addEventListener("contextmenu", function(){TrackUserActivity.CaptureScreen('right-click')});
+	window.addEventListener("load", function(){TrackUserActivity.CaptureScreen('page-load')});
+	window.addEventListener("change", function(){TrackUserActivity.CaptureScreen('change')});
 });
