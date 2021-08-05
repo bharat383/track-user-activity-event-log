@@ -31,7 +31,7 @@ class TrackUser{
 
 		//SAVE EVENT LOG
 		$file_content = @file_get_contents("../screenshot/event-log.log");
-		$file_content.="\n ".$event_log_array[$_POST['event_name']].". Image : ".$filename.". Time : ".date("Y-m-d-H-i-s").". IP Address : ".$_SERVER['REMOTE_ADDR'];
+		$file_content.="\n ".$event_log_array[$_POST['event_name']].". Image : ".$filename.". Time : ".date("Y-m-d-H-i-s").". IP Address : ".$_SERVER['REMOTE_ADDR']." - ".$_SERVER['HTTP_REFERER'];
 
 		file_put_contents("../screenshot/event-log.log", $file_content);
 	}
