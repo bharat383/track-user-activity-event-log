@@ -10,6 +10,8 @@ class TrackUser{
 				'link-click'=>'User has clicked the link.',
 				'right-click'=>'User has clicked Right Button of the Mouse.',
 				'copy'=>'User has copied web page content.',
+				'page-load'=>'User has loaded the web page.',
+				'change'=>'User has changed a form field on the web page.',
 			);
 			
 		$filteredData=substr($_POST['image_code'], strpos($_POST['image_code'], ",")+1);
@@ -29,7 +31,7 @@ class TrackUser{
 
 		//SAVE EVENT LOG
 		$file_content = @file_get_contents("../screenshot/event-log.log");
-		$file_content.="\n ".$event_log_array[$_POST['event_name']].". Image : ".$filename.". Time : ".date("Y-m-d-H-i-s").". IP Address : ".$_SERVER['REMOTE_ADDR'];
+		$file_content.="\n ".$event_log_array[$_POST['event_name']].". Image : ".$filename.". Time : ".date("Y-m-d-H-i-s").". IP Address : ".$_SERVER['REMOTE_ADDR']." - ".$_SERVER['HTTP_REFERER'];
 
 		file_put_contents("../screenshot/event-log.log", $file_content);
 	}
