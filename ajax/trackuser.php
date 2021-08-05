@@ -10,6 +10,8 @@ class TrackUser{
 				'link-click'=>'User has clicked the link.',
 				'right-click'=>'User has clicked Right Button of the Mouse.',
 				'copy'=>'User has copied web page content.',
+				'page-load'=>'User has loaded the web page.',
+				'change'=>'User has changed a form field on the web page.',
 			);
 			
 		$filteredData=substr($_POST['image_code'], strpos($_POST['image_code'], ",")+1);
